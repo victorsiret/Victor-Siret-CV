@@ -1,0 +1,32 @@
+/*___INTEGRATE_FONTS___*/
+@font-face {
+    font-family: "Helvetica-Hair";
+    src:url("./fonts/HelveticaNeue.ttf");
+    }
+
+@font-face {
+    font-family: "Helvetica-Medium";
+    src:url("./fonts/HelveticaNeue\ Medium.ttf");
+    }
+
+@font-face {
+    font-family: "Helvetica-Black";
+    src:url("./fonts/HelveticaNeue\ BlackCond.ttf");
+    }
+
+/*___SECTIONS___*/
+.top-profile {
+    font-family: "Helvetica-Black";
+    color: rgb(49, 49, 49);
+    font-size: 60px;
+}
+
+.profile-pic {
+    height: 160px;
+}
+
+.section-title {
+    font-family: "Helvetica-Black";
+    color: rgb(49, 49, 49);
+    font-size: 50px;
+}
