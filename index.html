@@ -4,8 +4,8 @@
     <title>Victor Siret R&eacute;sum&eacute;</title>
 
     <!-- STYLESHEETS -->
-    <link rel= "stylesheet" href="./style.css"/>
     <link rel= "stylesheet" href="./css/uikit.min.css"/>
+    <link rel= "stylesheet" href="./style.css"/>
     
     <!-- JAVASCRIPT -->
     <script src="./js/uikit.min.js"></script>
@@ -17,50 +17,108 @@
     <!-- PROFILE AND CONTACT INFO -->
 <div class="uk-section">
     <div class="uk-text-center top-profile">
-    <img src="./profile.png" class="profile-pic">&nbsp;Victor Siret
+    <img src="./profile.png" class="profile-pic"><span class="name">Victor Siret</span>
     </div>
 
-    <div class="uk-container-small uk-align-center uk-padding-large uk-padding-remove-vertical">
-        <div class="uk-text-center section-title">Contact</div>
-        165 rue du G&eacute;n&eacute;ral Leclerc, Chatou, 78400<br>
-        <a src="mailto:victorsiret@gmail.com">victorsiret@gmail.com</a>
-    </div>
-    <div>
-        hello
+    <br>
+
+    <div class="padding-contact">
+        <div>
+
+            <div class="uk-text-center section-title">Contact</div>
+            <br>
+
+            <div class="uk-grid">
+                <div class="uk-width-4-10"></div>
+                <div class="uk-width-2-10">
+                    <!-- Phone Number -->
+                    <a href="tel:+33602128094" class="links"><span uk-icon="icon: receiver"></span> &nbsp;&nbsp;+33 6 02 12 80 94</a><br>
+
+                    <!-- Email & Link -->
+                    <a src="mailto:victorsiret@gmail.com" class="links"><span uk-icon="icon: mail"></span> &nbsp;&nbsp;victorsiret@gmail.com</a><br>
+                    
+                    <!-- Google Maps Integration on Address -->
+                    <div class="uk-inline">
+                        <div class="links"><span uk-icon="icon: home"></span> &nbsp;&nbsp;165 rue du G&eacute;n&eacute;ral Leclerc, Chatou</div>
+                        <div uk-drop="pos: bottom-justify; mode: click">
+                            <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.6969388017696!2d2.1450736158641894!3d48.90211260558083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e663aac62dcbc3%3A0xf2a71cde354f1207!2s165+Rue+du+G%C3%A9n%C3%A9ral+Leclerc%2C+78400+Chatou!5e0!3m2!1sen!2sfr!4v1530738458052" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-4-10"></div>
+            </div>
+
+        </div>           
     </div>
 </div>
+
+
 
     <!-- WORK EXPERIENCE -->
-<div class="">
-    <ul uk-accordion class="uk-container uk-align-center">
+<div class="uk-section uk-light uk-background-cover" style="background-image: url(./images/vente-privee.jpg)">
+
+    <!-- Experience Header -->
+    <div class="uk-text-center section-title-light">Experience</div>
+
+    <!-- Work Accordion -->
+    <ul uk-accordion="multiple: true" class="uk-container uk-align-center" uk-scrollspy="cls: uk-animation-slide-right">
+        
+        <!-- Vente-privée -->
         <li>
-            <a class="uk-accordion-title" href="#">Sales Production UK &dash; Vente-priv&eacute;e (May 2016 - September 2016)</a>
+            <a class="uk-accordion-title accordion-light" href="#">Sales Production UK &dash; Vente-priv&eacute;e (May 2016 - September 2016)</a>
             
-            <div class="uk-accordion-content uk-column-1-2@s">
-                <a href="https://secure.uk.vente-privee.com/registration/AboutUs?CountryCode=EN" class="vplink">About Vente-priv&eacute;e</a><br>
-                <img src="./logos/VP.png" class="logos">
-                <ul>
-                        <li>Production of sales for the English market</li>
-                        <li>Adapting sizes, prices and descriptions of products for the UK market</li>
-                        <li>Projects to facilitate tasks using Excel</li>
-                        <li>Coordination to solve unintended problems</li>
-                </ul>
+            <div class="uk-accordion-content uk-grid">
+                <!-- Logo + About -->
+                <div class="uk-width-1-6">
+                    <a href="https://secure.uk.vente-privee.com/registration/AboutUs?CountryCode=EN" class="vplink">About Vente-priv&eacute;e</a><br>
+                    <br>
+                    <img src="./logos/VP.png" class="logos">
+                </div>
+                <!-- Work Activities -->
+                <div class="uk-width-5-6">
+                    <ul>
+                        <li>Sales production for the UK market</li>
+                        <li>Tailoring size, price and descriptions of products for the UK market</li>
+                        <li>Diverse side-projects in order to automate tasks such as convert sizes,
+                        description and prices according to intended output, creation of an excel-based 
+                        agenda which helps with organisation and planning and automates routine emails</li>
+                        <li>Coordination with technical teams to fix coding problems</li>
+                    </ul>
+                </div>
             </div>
         </li>
+
+        <!-- Guerlain -->
         <li>
-            <a class="uk-accordion-title" href="#">Item 2</a>
-            <div class="uk-accordion-content">
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+            <a class="uk-accordion-title accordion-light" href="#">Digital Marketing Assistant - Guerlain Canada (May 2015 - July 2015)</a>
+            
+            <div class="uk-accordion-content uk-grid">
+                <!-- Logo + About -->
+                <div class="uk-width-1-6">
+                    <a href="https://www.guerlain.com/int/en-int/founded-paris-1828" class="gulink">About Guerlain</a><br>
+                    <br>
+                    <img src="./logos/Guerlain.png" class="logos">
+                </div>
+
+                <div class="uk-width-5-6">
+                    <ul>
+                        <li>Optimisation of the Guerlain.ca webpage, with a study of the competition</li>
+                        <li>Redesign of retailers&hyphen; websites to better fit brand image</li>
+                        <li>Collaboration with brand ambassadors (Youtube influencers)</li>
+                        <li>Creation of an automated excel sheet to transpose brand product
+                        descriptions to fit company standards</li>
+                        <li>Collaboration with external media agency on banner design</li>
+                    </ul>
+                </div>
             </div>
         </li>
-        <li>
-            <a class="uk-accordion-title" href="#">Item 3</a>
-            <div class="uk-accordion-content">
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
-            </div>
-        </li>
+
+        <!-- Insert Extra Work Experience Here -->
     </ul>
 </div>
+
+<!-- End of Work Experience -->
 
 </body>
 

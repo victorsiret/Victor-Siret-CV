@@ -15,12 +15,29 @@
     }
 
 /*___SECTIONS___*/
+/*General*/
+.links {
+    color: rgb(66, 120, 180);
+}
+.links:hover {
+    color: rgb(47, 83, 124);
+    text-decoration: none;
+}
+
+.uk-light {
+    color: white;
+}
+
 /*Profile and Contact info*/
 .top-profile {
     font-family: "Helvetica-Black";
     color: rgb(49, 49, 49);
     font-size: 60px;
     letter-spacing: 1px;
+}
+
+.name {
+    padding-left: 60px;
 }
 
 /*Images*/
@@ -40,13 +57,43 @@
     letter-spacing: 1px;
 }
 
+.section-title-light {
+    font-family: "Helvetica-Black";
+    color: white;
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+
+.ff:hover {
+    color: red;
+}
 
 /*Vente-privée*/
 .vplink {
-    color: rgb(202, 29, 165);
+    color: rgb(221, 17, 177) !important;
+    font-weight: bold;
 }
 
 .vplink:hover {
-    color: rgb(153, 18, 124);
+    color: rgb(224, 91, 195) !important;
+    text-decoration: none;
 }
 
+/*Guerlain*/
+.gulink {
+    color: white !important;
+    font-weight: bold;
+}
+
+.gulink:hover {
+    color: lightgray !important;
+    text-decoration: none;
+}
+
+/*Accordion Fixes*/
+.accordion-light {
+    color: white !important;
+}
+.accordion-light:hover {
+    color: rgb(236, 236, 236) !important;
+}
