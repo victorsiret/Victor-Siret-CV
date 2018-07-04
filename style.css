@@ -15,18 +15,38 @@
     }
 
 /*___SECTIONS___*/
+/*Profile and Contact info*/
 .top-profile {
     font-family: "Helvetica-Black";
     color: rgb(49, 49, 49);
     font-size: 60px;
+    letter-spacing: 1px;
 }
 
+/*Images*/
 .profile-pic {
     height: 160px;
 }
 
+.logos {
+    height: 100px;
+}
+
+/*Headers*/
 .section-title {
     font-family: "Helvetica-Black";
     color: rgb(49, 49, 49);
     font-size: 50px;
+    letter-spacing: 1px;
 }
+
+
+/*Vente-privée*/
+.vplink {
+    color: rgb(202, 29, 165);
+}
+
+.vplink:hover {
+    color: rgb(153, 18, 124);
+}
+
