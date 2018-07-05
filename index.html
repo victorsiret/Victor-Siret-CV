@@ -12,57 +12,149 @@
     <script src="./js/uikit-icons.min.js"></script>
 </head>
 
+    <!-- ________________________________________________________________ -->
+    <!-- BODY -->
+
 <body>
 
-    <!-- PROFILE AND CONTACT INFO -->
+    <!-- ________________________________________________________________ -->
+    <!-- PROFILE -->
 <div class="uk-section">
     <div class="uk-text-center top-profile">
-    <img src="./profile.png" class="profile-pic"><span class="name">Victor Siret</span>
+        <img src="./profile.png" class="profile-pic"><span class="name">Victor Siret</span>
     </div>
-
+</div>
+    
+    <!-- ________________________________________________________________ -->
+    <!-- CONTACT INFO -->
+<div class="uk-section uk-section-secondary">
+    <div class="uk-text-center section-title-light">Contact</div>
     <br>
 
-    <div class="padding-contact">
-        <div>
+    <div class="uk-grid">
+        <div class="uk-width-1-3"></div>
+        <div class="uk-width-1-3 contact-info">
+            <!-- Phone Number -->
+            <a href="tel:+33602128094" class="links"><span uk-icon="icon: receiver"></span> &nbsp;&nbsp;+33 6 02 12 80 94</a><br>
 
-            <div class="uk-text-center section-title">Contact</div>
-            <br>
-
-            <div class="uk-grid">
-                <div class="uk-width-4-10"></div>
-                <div class="uk-width-2-10">
-                    <!-- Phone Number -->
-                    <a href="tel:+33602128094" class="links"><span uk-icon="icon: receiver"></span> &nbsp;&nbsp;+33 6 02 12 80 94</a><br>
-
-                    <!-- Email & Link -->
-                    <a src="mailto:victorsiret@gmail.com" class="links"><span uk-icon="icon: mail"></span> &nbsp;&nbsp;victorsiret@gmail.com</a><br>
-                    
-                    <!-- Google Maps Integration on Address -->
-                    <div class="uk-inline">
-                        <div class="links"><span uk-icon="icon: home"></span> &nbsp;&nbsp;165 rue du G&eacute;n&eacute;ral Leclerc, Chatou</div>
-                        <div uk-drop="pos: bottom-justify; mode: click">
-                            <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.6969388017696!2d2.1450736158641894!3d48.90211260558083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e663aac62dcbc3%3A0xf2a71cde354f1207!2s165+Rue+du+G%C3%A9n%C3%A9ral+Leclerc%2C+78400+Chatou!5e0!3m2!1sen!2sfr!4v1530738458052" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                            </div>
-                        </div>
+            <!-- Email & Link -->
+            <a href="mailto:victorsiret@gmail.com" class="links"><span uk-icon="icon: mail"></span> &nbsp;&nbsp;victorsiret@gmail.com</a><br>
+            
+            <!-- Google Maps Integration on Address -->
+            <div class="uk-inline">
+                <div class="links"><span uk-icon="icon: home"></span> &nbsp;&nbsp;165 rue du G&eacute;n&eacute;ral Leclerc, Chatou</div>
+                <div uk-drop="pos: bottom-justify; mode: click">
+                    <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.6969388017696!2d2.1450736158641894!3d48.90211260558083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e663aac62dcbc3%3A0xf2a71cde354f1207!2s165+Rue+du+G%C3%A9n%C3%A9ral+Leclerc%2C+78400+Chatou!5e0!3m2!1sen!2sfr!4v1530738458052" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
-                <div class="uk-width-4-10"></div>
             </div>
-
-        </div>           
+        </div>
+        <div class="uk-width-1-3"></div>
     </div>
 </div>
 
+    <!-- ________________________________________________________________ -->
+    <!-- SUMMARY -->
+<div class="uk-section uk-section-large">
+    <div class="uk-text-center section-title">Summary</div>
+    <br>
+    <div uk-grid>
+        <div class="uk-width-1-3"></div>
+        <div class="uk-width-1-3 content-menu">
+            <a href="#overview" uk-scroll>Overview</a><br>
+            <a href="#education" uk-scroll>Education</a><br>
+            <a href="#experience" uk-scroll>Experience</a><br>
+            <a href="#skills" uk-scroll>Skills</a><br>
+            <a href="#language" uk-scroll>Languages</a><br>
+            <a href="#interests" uk-scroll>Interests</a><br>
+        </div>
+        <div class="uk-width-1-3"></div>
+    </div>
+</div>
+
+    <!-- ________________________________________________________________ -->
+    <!-- OVERVIEW -->
+<div class="uk-section uk-light uk-background-cover uk-section-large" style="background-image: url(./images/paris-lights.jpg)" id="overview">
+        <div class="uk-text-center section-title-light">Overview</div>
+        <br>
+        <div class="uk-container" uk-scrollspy="cls: uk-animation-slide-right">Internationally oriented candidate, has lived 7 years outside of France, studied abroad for 3 years in Montreal, 
+        looking to work abroad in order to improve language skills and to discover different cultures. Has completed one 
+        internship and worked professionally before starting a master degree.</div>
+</div>
 
 
+    <!-- EDUCATION -->
+<div class="uk-section uk-background-cover uk-section-large" style="background-image: url(./images/essec.jpg)" id="education">
+        <div class="uk-text-center section-title">Education</div>
+        <br>
+        
+<!-- Education Accordion -->
+<ul uk-accordion="multiple: true" class="uk-container uk-align-center" uk-scrollspy="cls: uk-animation-slide-right">
+        
+        <!-- ESSEC -->
+        <li>
+            <a class="uk-accordion-title accordion-dark" href="#">Master in Management (MSc) - ESSEC Business School (Expected 2019)</a>
+            
+            <div class="uk-accordion-content uk-grid">
+                <!-- Logo + About -->
+                <div class="uk-width-1-6">
+                    <a href="https://secure.uk.vente-privee.com/registration/AboutUs?CountryCode=EN" class="vplink">About Vente-priv&eacute;e</a><br>
+                    <br>
+                    <img src="./logos/ESSEC.png" class="logos">
+                </div>
+                <!-- Work Activities -->
+                <div class="uk-width-5-6">
+                    <ul class="dark-text">
+                        <li>Sales production for the UK market</li>
+                        <li>Tailoring size, price and descriptions of products for the UK market</li>
+                        <li>Diverse side-projects in order to automate tasks such as convert sizes,
+                        description and prices according to intended output, creation of an excel-based 
+                        agenda which helps with organisation and planning and automates routine emails</li>
+                        <li>Coordination with technical teams to fix coding problems</li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+
+        <!-- Concordia -->
+        <li>
+            <a class="uk-accordion-title accordion-dark" href="#">Digital Marketing Assistant - Guerlain Canada (May 2015 - July 2015)</a>
+            
+            <div class="uk-accordion-content uk-grid">
+                <!-- Logo + About -->
+                <div class="uk-width-1-6">
+                    <a href="https://www.guerlain.com/int/en-int/founded-paris-1828" class="gulink">About Guerlain</a><br>
+                    <br>
+                    <img src="./logos/JMSB.png" class="logos">
+                </div>
+
+                <div class="uk-width-5-6">
+                    <ul class="dark-text">
+                        <li>Optimisation of the Guerlain.ca webpage, with a study of the competition</li>
+                        <li>Redesign of retailers&hyphen; websites to better fit brand image</li>
+                        <li>Collaboration with brand ambassadors (Youtube influencers)</li>
+                        <li>Creation of an automated excel sheet to transpose brand product
+                        descriptions to fit company standards</li>
+                        <li>Collaboration with external media agency on banner design</li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+
+        <!-- Insert Extra Education Here -->
+    </ul>
+
+</div>
+
+    <!-- ________________________________________________________________ -->
     <!-- WORK EXPERIENCE -->
-<div class="uk-section uk-light uk-background-cover" style="background-image: url(./images/vente-privee.jpg)">
+<div class="uk-section uk-section-large uk-light uk-background-cover" style="background-image: url(./images/vente-privee.jpg)" id="experience">
 
     <!-- Experience Header -->
     <div class="uk-text-center section-title-light">Experience</div>
 
     <!-- Work Accordion -->
-    <ul uk-accordion="multiple: true" class="uk-container uk-align-center" uk-scrollspy="cls: uk-animation-slide-right">
+    <ul uk-accordion="multiple: true" class="uk-container" uk-scrollspy="cls: uk-animation-slide-right">
         
         <!-- Vente-privée -->
         <li>
@@ -118,7 +210,124 @@
     </ul>
 </div>
 
-<!-- End of Work Experience -->
+    <!-- ________________________________________________________________ -->
+    <!-- SKILLS -->
+<div class="uk-section uk-background-cover uk-section-large" style="background-image: url(./images/tools.jpg)" id="skills">
+
+    <!-- Skills Header -->
+    <div class="uk-text-center section-title">Skills</div>
+
+</div>
+
+    <!-- ________________________________________________________________ -->
+    <!-- LANGUAGES -->
+<div class="uk-section uk-background-cover uk-section-large" style="background-image: url(./images/flags.jpg)" id="language">
+
+    <!-- Languages Header -->
+    <div class="uk-text-center section-title-light">Languages</div>
+
+    <div class="uk-grid language-menu" uk-scrollspy="cls: uk-animation-slide-right">
+        <div class="uk-width-1-3"></div>
+        <div class="uk-width-1-6 uk-text-right">
+            <!-- English -->
+            <div class="lang">English</div>
+            <div uk-drop="pos: bottom-justify; mode:click">
+                <div class="uk-card uk-card-body uk-card-default">
+                <h3 class="uk-card-title">Perfectly billingual</h3>
+                <p>7 years lived abroad in USA and Canada, 14 years of studies in English</p></div>
+            </div>
+            <!-- French -->
+            <div class="lang">French</div>
+            <div uk-drop="pos: bottom-justify; mode:click">
+                <div class="uk-card uk-card-body uk-card-default">
+                <h3 class="uk-card-title">Mother tongue</h3>
+                <p>Born in France, 10 years of studies in the French school system</p></div>
+            </div>
+            <!-- Spanish -->
+            <div class="lang">Spanish</div>
+            <div uk-drop="pos: bottom-justify; mode:click">
+                <div class="uk-card uk-card-body uk-card-default">
+                <h3 class="uk-card-title">Working proficiency</h3>
+                <p>Studied at school during 8 years, many trips in Spain and Central America</p></div>
+            </div>
+            <!-- German -->
+            <div class="lang">German</div>
+            <div uk-drop="pos: bottom-justify; mode:click">
+                <div class="uk-card uk-card-body uk-card-default">
+                <h3 class="uk-card-title">Scholar proficiency</h3>
+                <p>Studied at school during 7 years, linguistic trips in Germany</p></div>
+            </div>
+            <!-- Italian -->
+            <div class="lang">Italian</div>
+            <div uk-drop="pos: bottom-justify; mode:click">
+                <div class="uk-card uk-card-body uk-card-default">
+                <h3 class="uk-card-title">Basic proficiency</h3>
+                <p>Learned on free time, good reading skills and moderate listening skills</p></div>
+            </div>
+            <!-- Danish -->
+            <div class="lang">Danish</div>
+            <div uk-drop="pos: bottom-justify; mode:click">
+                <div class="uk-card uk-card-body uk-card-default">
+                <h3 class="uk-card-title">Beginner</h3>
+                <p>Learned on free time, very basic knowledge</p></div>
+            </div>
+        </div>
+        <div class="uk-width-1-6">
+            &#9899;&#9899;&#9899;&#9899;<br>
+            &#9899;&#9899;&#9899;&#9899;<br>
+            &#9899;&#9899;&#9899;&#9898;<br>
+            &#9899;&#9899;&#9898;&#9898;<br>
+            &#9899;&#9898;&#9898;&#9898;<br>
+            &#9899;&#9898;&#9898;&#9898;<br>
+        </div>
+        <div class="uk-width-1-3"></div>
+    </div>
+</div>
+
+    <!-- ________________________________________________________________ -->
+    <!-- INTERESTS -->
+<div class="uk-section uk-section uk-background-cover uk-section-large" style="background-image: url()" id="interests">
+
+    <!-- Interests Header -->
+    <div class="uk-text-center section-title">Interests</div>
+    
+    <div>
+        <ul class="uk-container" uk-accordion uk-scrollspy="cls: uk-animation-slide-right">
+                <li>
+                    <a class="uk-accordion-title" href="#">Automobile and Motorcycles</a>
+                    <div class="uk-accordion-content">
+                        
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">Drawing</a>
+                    <div class="uk-accordion-content">
+                        <div class="uk-child-width-1-2@l uk-container uk-container-small" uk-grid uk-lightbox="animation: slide">
+                            <!-- Ducati -->
+                            <div>
+                                <a class="uk-inline" href="./drawings/ducati.jpg" data-caption="Ducati 848">
+                                    <img src="./drawings/ducati.jpg" alt="">
+                                </a>
+                            </div>
+                            <!-- Shalimar -->
+                            <div>
+                                    <a class="uk-inline" href="./drawings/shalimar.jpg" data-caption="Shalimar">
+                                        <img src="./drawings/shalimar.jpg" alt="">
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">Graphic Design</a>
+                    <div class="uk-accordion-content">
+                    
+                    </div>
+                </li>
+            </ul>
+    </div>
+
+</div>
 
 </body>
 
